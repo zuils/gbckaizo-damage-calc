@@ -297,7 +297,7 @@ var GSC_PATCH = {
     'Scary Face': { bp: 0, category: 'Status', type: 'Normal' },
     Charm: { bp: 0, category: 'Status', type: 'Normal' },
     'HP Grass': { bp: 69, type: 'Grass' },
-    'HP Rock': { bp : 68, type: 'Rock' },
+    'HP Rock': { bp: 68, type: 'Rock' },
     'Hidden Power Bug': { bp: 70, type: 'Bug' },
     'Hidden Power Dark': { bp: 70, type: 'Dark' },
     'Hidden Power Dragon': { bp: 70, type: 'Dragon' },
