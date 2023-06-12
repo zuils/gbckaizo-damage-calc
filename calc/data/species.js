@@ -153,7 +153,7 @@ var RBY = {
         weightkg: 0.8,
         nfe: true
     },
-    Ditto: { types: ['Normal'], bs: { hp: 48, at: 48, df: 48, sp: 48, sl: 48 }, weightkg: 4 },
+    Ditto: { types: ['Normal'], bs: { hp: 100, at: 100, df: 100, sp: 100, sl: 100 }, weightkg: 4 },
     Dodrio: {
         types: ['Normal', 'Flying'],
         bs: { hp: 60, at: 110, df: 70, sp: 100, sl: 60 },
@@ -402,7 +402,7 @@ var RBY = {
     },
     Machamp: {
         types: ['Fighting'],
-        bs: { hp: 90, at: 130, df: 80, sp: 55, sl: 65 },
+        bs: { hp: 90, at: 130, df: 80, sp: 85, sl: 65 },
         weightkg: 130
     },
     Machoke: {
@@ -839,7 +839,7 @@ var GSC_PATCH = {
     Cubone: { bs: { sa: 40, sd: 50 } },
     Dewgong: { bs: { sa: 70, sd: 95 } },
     Diglett: { bs: { sa: 35, sd: 45 } },
-    Ditto: { bs: { sa: 48, sd: 48 }, gender: 'N' },
+    Ditto: { bs: { at: 48, sa: 48, sp: 140 }, gender: 'N' },
     Dodrio: { bs: { sa: 60, sd: 60 } },
     Doduo: { bs: { sa: 35, sd: 35 } },
     Dragonair: { bs: { sa: 70, sd: 70 } },
@@ -872,7 +872,7 @@ var GSC_PATCH = {
     Hitmonchan: { bs: { sa: 35, sd: 110 } },
     Hitmonlee: { bs: { sa: 35, sd: 110 } },
     Horsea: { bs: { sa: 70, sd: 25 } },
-    Hypno: { bs: { sa: 73, sd: 115 } },
+    Hypno: { bs: { sa: 115, sd: 115 } },
     Ivysaur: { bs: { sa: 80, sd: 80 } },
     Jigglypuff: { bs: { sa: 45, sd: 25 } },
     Jolteon: { bs: { sa: 110, sd: 95 } },
@@ -1499,7 +1499,7 @@ var GSC_PATCH = {
     },
     "?????": {
         types: ['???'],
-        bs: { hp: 150, at: 100, df: 100, sa: 100, sd: 100, sp: 100 },
+        bs: { hp: 148, at: 139, df: 129, sa: 146, sd: 128, sp: 128 },
         weightkg: 0
     }
 };
