@@ -298,6 +298,7 @@ var GSC_PATCH = {
     Charm: { bp: 0, category: 'Status', type: 'Normal' },
     'HP Grass': { bp: 69, type: 'Grass' },
     'HP Rock': { bp: 68, type: 'Rock' },
+    'HP Ice': { bp: 69, type: 'Ice' },
     'Hidden Power Bug': { bp: 70, type: 'Bug' },
     'Hidden Power Dark': { bp: 70, type: 'Dark' },
     'Hidden Power Dragon': { bp: 70, type: 'Dragon' },
