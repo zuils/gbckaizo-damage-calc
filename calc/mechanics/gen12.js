@@ -246,7 +246,10 @@ function calculateRBYGSC(gen, attacker, defender, move, field) {
         if (field.attackerSide.isBadgeBoosted > 13 && move.hasType('Water')) {
             baseDamage = Math.floor(baseDamage * 1.125);
         }
-        if (field.attackerSide.isBadgeBoosted > 14 && move.hasType('Ground')) {
+        if (field.attackerSide.isBadgeBoosted > 14 && move.hasType('Fire')) {
+            baseDamage = Math.floor(baseDamage * 1.125);
+        }
+        if (field.attackerSide.isBadgeBoosted > 15 && move.hasType('Ground')) {
             baseDamage = Math.floor(baseDamage * 1.125);
         }
     }
