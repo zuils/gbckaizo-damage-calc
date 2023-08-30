@@ -62,7 +62,7 @@ var RBY = {
     Counter: { bp: 1, type: 'Fighting' },
     Crabhammer: { bp: 90, type: 'Water' },
     'Defense Curl': { bp: 0, category: 'Status', type: 'Normal' },
-    Dig: { bp: 100, type: 'Ground' },
+    Dig: { bp: 75, type: 'Ground' },
     Disable: { bp: 0, category: 'Status', type: 'Normal' },
     'Dizzy Punch': { bp: 70, type: 'Normal' },
     'Double-Edge': { bp: 100, type: 'Normal', recoil: [25, 100] },
