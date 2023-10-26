@@ -36,10 +36,15 @@ function ExportPokemon(pokeInfo) {
 
 	var IVs_Array = [];
 	for (var stat in pokemon.ivs) {
-		var iv = pokemon.ivs[stat] ? pokemon.ivs[stat] : 0;
-		if (iv < 31) {
-			IVs_Array.push(iv + " " + calc.Stats.displayStat(stat));
-		}
+		var iv = pokemon.ivs[stat] || 0;
+		if (gen > 2) {
+			if (iv < 31) {
+  				IVs_Array.push(iv + " " + calc.Stats.displayStat(stat));
+  			}
+  		}
+  		else if (iv < 15) {
+  			IVs_Array.push(iv + " " + calc.Stats.displayStat(stat));
+  		}
 	}
 	if (IVs_Array.length > 0) {
 		finalText += "IVs: ";
