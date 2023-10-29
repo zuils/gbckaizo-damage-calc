@@ -122,7 +122,7 @@ $(".at .dvs").keyup(function () {
 	poke.find(".hp .dvs").val(getHPDVs(poke));
 	calcHP(poke);
 });
-$(".df .dvs").keyup(function () {
+$(".df .").keyup(function () {
 	var poke = $(this).closest(".poke-info");
 	calcStat(poke, 'df');
 	poke.find(".hp .dvs").val(getHPDVs(poke));
@@ -475,7 +475,7 @@ $(".set-selector").change(function () {
 			pokeObj.find(".level").val(set.level);
 			pokeObj.find(".hp .evs").val((set.evs && set.evs.hp !== undefined) ? set.evs.hp : 0);
 			pokeObj.find(".hp .ivs").val((set.ivs && set.ivs.hp !== undefined) ? set.ivs.hp : 31);
-			pokeObj.find(".hp .dvs").val((set.dvs !== undefined && set.dvs.hp !== undefined) ? set.dvs.hp : (set.ivs !== undefined && set.ivs.hp !== undefined) ? set.ivs.hp : 15);
+			pokeObj.find(".hp .dvs").val((set.dvs !== undefined && set.dvs.hp !== undefined) ? set.dvs.hp : (set.ivs !== undefined && set.ivs.hp !== undefined) ? calc.Stats.IVToDV(set.ivs.hp) : 15);
 			for (i = 0; i < LEGACY_STATS[gen].length; i++) {
 				pokeObj.find("." + LEGACY_STATS[gen][i] + " .evs").val(
 					(set.evs && set.evs[LEGACY_STATS[gen][i]] !== undefined) ?
@@ -483,7 +483,7 @@ $(".set-selector").change(function () {
 				pokeObj.find("." + LEGACY_STATS[gen][i] + " .ivs").val(
 					(set.ivs && set.ivs[LEGACY_STATS[gen][i]] !== undefined) ? set.ivs[LEGACY_STATS[gen][i]] : 31);
 				pokeObj.find("." + LEGACY_STATS[gen][i] + " .dvs").val(
-					(set.dvs !== undefined && set.dvs[LEGACY_STATS[gen][i]] !== undefined) ? set.dvs[LEGACY_STATS[gen][i]] : (set.ivs !== undefined && set.ivs[LEGACY_STATS[gen][i]] !== undefined) ? set.ivs[LEGACY_STATS[gen][i]] : 15);
+					(set.dvs !== undefined && set.dvs[LEGACY_STATS[gen][i]] !== undefined) ? set.dvs[LEGACY_STATS[gen][i]] : (set.ivs !== undefined && set.ivs[LEGACY_STATS[gen][i]] !== undefined) ? calc.Stats.IVToDV(set.ivs[LEGACY_STATS[gen][i]]) : 15);
 			}
 			setSelectValueIfValid(pokeObj.find(".nature"), set.nature, "Hardy");
 			var abilityFallback = (typeof pokemon.abilities !== "undefined") ? pokemon.abilities[0] : "";
