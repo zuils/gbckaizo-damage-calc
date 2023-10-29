@@ -122,7 +122,7 @@ $(".at .dvs").keyup(function () {
 	poke.find(".hp .dvs").val(getHPDVs(poke));
 	calcHP(poke);
 });
-$(".df .").keyup(function () {
+$(".df .dvs").keyup(function () {
 	var poke = $(this).closest(".poke-info");
 	calcStat(poke, 'df');
 	poke.find(".hp .dvs").val(getHPDVs(poke));
