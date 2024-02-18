@@ -402,7 +402,7 @@ var RBY = {
     },
     Machamp: {
         types: ['Fighting'],
-        bs: { hp: 90, at: 130, df: 80, sp: 85, sl: 65 },
+        bs: { hp: 90, at: 130, df: 80, sp: 85, sl: 85 },
         weightkg: 130
     },
     Machoke: {
