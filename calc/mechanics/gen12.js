@@ -114,13 +114,13 @@ function calculateRBYGSC(gen, attacker, defender, move, field) {
         if (field.attackerSide.isBadgeBoosted > 0 && isPhysical && !move.isCrit) {
             at = Math.floor(at * 1.125);
         }
-        if (field.defenderSide.isBadgeBoosted > 5 && (defender.rawStats['spd'] > 205 && defender.rawStats['spd'] < 433 || defender.rawStats['spd'] > 660) && !isPhysical) {
+        if (field.defenderSide.isBadgeBoosted > 5 && (defender.rawStats['spd'] > 205 && defender.rawStats['spd'] < 433 || defender.rawStats['spd'] > 660) && !isPhysical && !move.isCrit) {
             df = Math.floor(df * 1.125);
         }
         if (field.attackerSide.isBadgeBoosted > 5 && !isPhysical && !move.isCrit) {
             at = Math.floor(at * 1.125);
         }
-        if (field.defenderSide.isBadgeBoosted > 6 && isPhysical) {
+        if (field.defenderSide.isBadgeBoosted > 6 && isPhysical && !move.isCrit) {
             df = Math.floor(df * 1.125);
         }
     }
