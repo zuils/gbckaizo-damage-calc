@@ -235,6 +235,7 @@ var GSC_PATCH = {
     'Belly Drum': { bp: 0, category: 'Status', type: 'Normal' },
     Bonemerang: { bp: 50 },
     'Conversion 2': { bp: 0, category: 'Status', type: 'Normal' },
+    'Crabhammer': { bp: 120 },
     'Cross Chop': { bp: 100, type: 'Fighting' },
     Curse: { bp: 0, category: 'Status', type: '???' },
     'Destiny Bond': { bp: 0, category: 'Status', type: 'Ghost' },
