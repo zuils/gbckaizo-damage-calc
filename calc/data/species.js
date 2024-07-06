@@ -964,7 +964,7 @@ var GSC_PATCH = {
     Wartortle: { bs: { sa: 65, sd: 80 } },
     Weedle: { bs: { sa: 20, sd: 20 } },
     Weepinbell: { bs: { sa: 85, sd: 45 } },
-    Weezing: { bs: { sa: 115, sd: 70 } },
+    Weezing: { bs: { sa: 85, sd: 85 } },
     Wigglytuff: { bs: { sa: 75, sd: 50 } },
     Zapdos: { bs: { sa: 125, sd: 90 }, gender: 'N' },
     Zubat: { bs: { sa: 30, sd: 40 } },
