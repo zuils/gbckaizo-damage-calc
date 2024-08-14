@@ -839,7 +839,7 @@ var GSC_PATCH = {
     Cubone: { bs: { sa: 40, sd: 50 } },
     Dewgong: { bs: { sa: 70, sd: 95 } },
     Diglett: { bs: { sa: 35, sd: 45 } },
-    Ditto: { bs: { at: 48, sa: 48, sp: 140 }, gender: 'N' },
+    Ditto: { bs: { at: 48, sa: 48, sd: 100, sp: 140 }, gender: 'N' },
     Dodrio: { bs: { sa: 60, sd: 60 } },
     Doduo: { bs: { sa: 35, sd: 35 } },
     Dragonair: { bs: { sa: 70, sd: 70 } },
