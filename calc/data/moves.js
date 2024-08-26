@@ -300,6 +300,8 @@ var GSC_PATCH = {
     'HP Grass': { bp: 69, type: 'Grass' },
     'HP Rock': { bp: 68, type: 'Rock' },
     'HP Ice': { bp: 69, type: 'Ice' },
+    'HP Psychic': { bp: 48, type: 'Psychic' },
+    'HP Dragon': { bp: 69, type: 'Dragon' },
     'Hidden Power Bug': { bp: 70, type: 'Bug' },
     'Hidden Power Dark': { bp: 70, type: 'Dark' },
     'Hidden Power Dragon': { bp: 70, type: 'Dragon' },
